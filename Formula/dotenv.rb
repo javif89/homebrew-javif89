@@ -5,11 +5,11 @@
 class Dotenv < Formula
   desc ""
   homepage "https://github.com/javif89/dotenv"
-  version "0.0.4"
+  version "0.0.6"
 
   on_macos do
-    url "https://github.com/javif89/dotenv/releases/download/v0.0.4/dotenv_0.0.4_darwin_all.tar.gz"
-    sha256 "a12ce84763c4b28f9d0a8bc851563f41886be897cd12ebf39b184e7b733020f0"
+    url "https://github.com/javif89/dotenv/releases/download/v0.0.6/dotenv_0.0.6_darwin_all.tar.gz"
+    sha256 "445bfd9f3e6ce706755f44737b9714dfd0e8de47ae76ffadec8a33bc5969d16f"
 
     def install
       bin.install "dotenv"
@@ -18,16 +18,16 @@ class Dotenv < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javif89/dotenv/releases/download/v0.0.4/dotenv_0.0.4_linux_arm64.tar.gz"
-      sha256 "23928d9bf80d523bfc483ed739d437d360889ca7475d6cb80daceed4259ec2b3"
+      url "https://github.com/javif89/dotenv/releases/download/v0.0.6/dotenv_0.0.6_linux_arm64.tar.gz"
+      sha256 "b4911b367cde6862521bfea8a8b638fdfe663f3b126c59fc5ab1c71f8ef151bb"
 
       def install
         bin.install "dotenv"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/javif89/dotenv/releases/download/v0.0.4/dotenv_0.0.4_linux_amd64.tar.gz"
-      sha256 "14bf75e920a1127d2c1e906e068f650a86dfc77394842d28f54c9a8d91939920"
+      url "https://github.com/javif89/dotenv/releases/download/v0.0.6/dotenv_0.0.6_linux_amd64.tar.gz"
+      sha256 "ef42d6f58eea6d1bc92432d3c4960dfa617e97afb2fffabe021dc56dc92bab3e"
 
       def install
         bin.install "dotenv"
