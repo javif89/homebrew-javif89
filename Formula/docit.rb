@@ -5,11 +5,11 @@
 class Docit < Formula
   desc ""
   homepage "https://github.com/javif89/docit"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    url "https://github.com/javif89/docit/releases/download/v0.1.0/docit_0.1.0_darwin_all.tar.gz"
-    sha256 "c6dc430f2cde5acb424c2ff6097447cea9e16948925d8d9fd12a0254178753e3"
+    url "https://github.com/javif89/docit/releases/download/v0.1.1/docit_0.1.1_darwin_all.tar.gz"
+    sha256 "caa6343ae9e2f8c18aebbd6592ae30ddf3684048e2b30abbcc09a0ed15ba6fd0"
 
     def install
       bin.install "docit"
@@ -18,16 +18,16 @@ class Docit < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/javif89/docit/releases/download/v0.1.0/docit_0.1.0_linux_arm64.tar.gz"
-      sha256 "5a65ceb3317bd9bb3d2e6e714fbc5c760c29f2d0e219b233e12f7534bbfcee1a"
+      url "https://github.com/javif89/docit/releases/download/v0.1.1/docit_0.1.1_linux_arm64.tar.gz"
+      sha256 "6da29f28da4b405a7ac4b7021e90da5ad12964b0d661ec6c84a3ace4241820a5"
 
       def install
         bin.install "docit"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/javif89/docit/releases/download/v0.1.0/docit_0.1.0_linux_amd64.tar.gz"
-      sha256 "107a3a4e2075bf768fb18edea41d5478ff26369b2d854aba2cc8e9b069a542fd"
+      url "https://github.com/javif89/docit/releases/download/v0.1.1/docit_0.1.1_linux_amd64.tar.gz"
+      sha256 "1970f43cc6d58c83ac1e07437c8c730592d4917b7b1a5bec98bd0c0b76e0303f"
 
       def install
         bin.install "docit"
